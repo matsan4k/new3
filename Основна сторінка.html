@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="">
+	<style type="text/css">
+		@media all and screen(max-width: 1400px){
+			.boss{
+		display: grid;
+		grid-template-columns: 300px 300px 300px;
+		grid-template-rows: 460px 460px 460px 460px;
+		grid-gap: 30px;
+
+	}
+
+		}
+		@media all and screen(max-width: 700px){
+			.boss{
+		display: grid;
+		grid-template-columns: 300px 300px;
+		grid-template-rows: 460px 460px 460px 460px 460px 460px;
+		grid-gap: 30px;
+	}
+		}
+	    @media all and screen(min-width: 700px){
+			.mini{
+		background-color: #DCDCDC;
+		height: 420px;
+		width: 300px; 
+		margin-left: 0px;
+		margin-top: 30px;
+	}
+		}
+		* {
+    margin: 0;
+    padding: 0;
+}
+
+/*a{
+    text-decoration: none;
+    color: #D3D3D3;
+    transition-duration: 0.8s;
+}*/
+
+body{
+	background-color: #A9A9A9;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background: black;
+    border-bottom: 1px solid black; 
+}
+.slogan{
+    font-size: 40px;
+    font-family: sans;
+    font-style: italic;
+    color: black;
+    margin: 50px 0;
+}
+.container{
+    width: 100%;
+    max-width: 1000px;
+    padding: 8px;
+    margin: 0 auto;
+}
+
+.container:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav {
+    float: right;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+nav a {
+    line-height: 70px;
+    font-size: 20px;
+    margin: 0 10px;
+    color: white;
+}
+
+nav ul li:last-child {
+    background: black;
+    border-radius: 10px;
+}
+
+.login {
+    color: white;
+    font-weight: 900;
+}
+	.img{
+		width: 15%;
+		margin-left: 450px;
+	}
+	/*a:hover{
+    color: #05FCB8;
+    transition-duration: 0.8s;
+	}*/
+	.boss{
+		display: grid;
+		grid-template-columns: 300px 300px 300px;
+		grid-template-rows: 460px 460px 460px 460px;
+		grid-gap: 30px;
+		justify-content: center;
+	}
+	.mini{
+		background-color: #DCDCDC;
+		height: 420px;
+		width: 300px; 
+		margin-top: 30px;
+	}
+	img{
+		width: 290px;
+		margin-left: 5px;
+		margin-top: 5px;
+	}
+	p{
+		text-align: center;
+	}
+	h1{
+		text-align: center;
+	}
+	h4{
+		position: absolute;
+		top: 130px; 
+		left: 5px;
+		font-size: 30px;
+	}		
+	.dno{
+		position: absolute;
+		top: 2024px;
+		background-color: black;
+		width: 100%;
+		height: 100px;
+		text-align: center;
+		font size: 20px; 
+		transition-duration: 0.8s;	
+		margin-top: 8%; 
+	}
+	.number{
+		color: white;
+		position: absolute;
+		left: 20%;
+		top: 20%;
+	}
+	.post{
+		color: white;
+		position: absolute;
+		left: 60%;
+		top: 20%;
+	}
+	.SL{
+		color: white;
+		position: absolute;
+		top: 1%;
+		left: 44%;
+		font-size: 80px;
+		font-family: American Typewriter, serif;
+	}
+	.SH{
+		color: white;
+		position: absolute;
+		top: 28%;
+		left: 87%;
+		font-size: 35px;
+	}
+	.M{
+		position: absolute;
+		left: 9.2%;
+		top: 10%;
+		font-size: 30px;
+		text-decoration: none;
+		transition-duration: 0.8s;
+	}
+	.M:hover{
+		color: #05FCB8;
+		transition-duration: 0.8s;
+	}
+	.W{
+		position: absolute;
+		left: 27.6%;
+		top: 10%;
+		font-size: 30px;
+		text-decoration: none;
+		transition-duration: 0.8s;
+	}
+	.W:hover{
+		color: #05FCB8;
+		transition-duration: 0.8s;
+	}
+	.K{
+		position: absolute;
+		left: 32%;
+		top: 10%;
+		font-size: 25px;
+		text-decoration: none;
+		transition-duration: 0.8s;
+	}
+	.K:hover{
+		color: #05FCB8;
+		transition-duration: 0.8s;
+	}
+	.dop{
+		position: absolute;
+		top: 10%;
+		left: 64.4%;
+		font-size: 25px;
+		text-decoration: none;
+    	color: white;
+    	transition-duration: 0.8s;
+	}
+	.dop:hover{
+		font-size: 25px;
+		text-decoration: none;
+    	color: #05FCB8;
+    	transition-duration: 0.8s;
+	}
+	.spi{
+		position: absolute;
+		top: 10%;
+		left: 82.8%;
+		font-size: 25px;
+		text-decoration: none;
+    	color: white;
+    	transition-duration: 0.8s;
+	}
+	.spi:hover{
+		font-size: 25px;
+		text-decoration: none;
+    	color: #05FCB8;
+    	transition-duration: 0.8s;
+	}
+	.kat{
+		position: absolute;
+		top: 10%;
+		left: 60%;
+		font-size: 25px;
+		text-decoration: none;
+    	color: white;
+    	transition-duration: 0.8s;
+	}
+	.kat:hover{
+		font-size: 25px;
+		text-decoration: none;
+    	color: #05FCB8;
+    	transition-duration: 0.8s;
+	}
+	.knopka{
+		position: static;
+		text-align: center;
+		border-radius: 3%;
+		padding-left: 6.76%;
+		padding-right: 6.76%;
+		padding-top: 0.1%;
+		padding-bottom: 0.1%;
+		font-size: 20px;
+		cursor: pointer;
+		transition-duration: 0.8s;	
+		text-decoration: none;
+		width: 100%;
+		height: 7%;
+	}
+	.knopka:hover{
+		position: static;
+		text-align: center;
+		border-radius: 3%;
+		padding-left: 6.35%;
+		padding-right: 6.35%;
+		padding-top: 0.06%;
+		padding-bottom: 0.06%;
+		font-size: 23px;
+		cursor: pointer;
+		transition-duration: 0.8s;	
+		background-color: #DCDCDC;
+		width: 100%;
+		height: 7.1%;
+	}
+	.knop{
+		text-decoration: none;
+		color: black;
+	}
+	.more{
+		text-decoration: none;
+		color: #0000FF;
+		padding-left: 28%;
+		padding-right: 28%;
+		padding-top: 0%;
+		font-size: 16px;
+		transition-duration: 0.8s;
+	}
+	.more:hover{
+		font-size: 16.5px;
+		transition-duration: 0.8s;
+		padding-left: 27.5%;
+		padding-right: 27.5%;
+	}
+	.dnopic{
+		position: absolute;;
+		left: 38.5%;
+	}
+	</style>
+	<meta charset="utf-8">
+	<title>N&D</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<nav>
+				<ul>
+					<li>
+						<h4 class="SL">N&D</h4>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="file:///C:/Users/User/Desktop/N&D/%D0%9A%D0%BE%D0%B4/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%96%20%D0%A1%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B8/%D0%A1%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B8/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D0%B0%20%D1%81%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B0%20(%D0%BE%D0%B4%D1%8F%D0%B3).html" class="M">Одяг</a>
+					</li>
+					<li>
+						<a href="file:///C:/Users/User/Desktop/N&D/%D0%9A%D0%BE%D0%B4/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%96%20%D0%A1%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B8/%D0%A1%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B8/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D0%B0%20%D1%81%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B0(%D0%B2%D0%B7%D1%83%D1%82%D1%82%D1%8F).html" class="W">Взуття</a>
+					</li>
+					<li>
+<!-- 						<a href="file:///C:/Users/User/Desktop/%D1%81%D0%B0%D0%B9%D1%82/%D0%BA%D0%BE%D0%B4/%D0%94%D0%B8%D1%82%D1%8F%D1%87%D0%B5%20%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D0%B0.html" class="K">Дитяче</a> -->
+					</li>
+				</ul>
+				<ul>
+					<li><a href="https://t.me/NDshopUA" class="dop">Допомога</a></li>
+<!--  					<li><a href="" class="kat">Основна сторінка</a></li> -->
+					<li><a href="https://t.me/NDshopUA" class="spi">Співпраця</a></li>
+				</ul>
+				<ul>
+					<li>
+						<!-- <h4 class="SH">SHOP_UA</h4> -->
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+		<div class="boss">
+			<div class="mini">
+				<img src="http://img01.taobaocdn.com/bao/uploaded/i1/91473101/T2srrrXMVXXXXXXXXX_!!91473101.jpg">
+				<h1>Название позиции</h1>
+				<a href="file:///C:/Users/User/Desktop/N&D/%D0%9A%D0%BE%D0%B4/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%96%20%D0%A1%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B8/%D0%91%D1%96%D0%BB%D1%8C%D1%88%D0%B5%20%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D1%97/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D0%B0/1/1.html" class="more">більше інформації</a><br>
+				<button class="knopka"><a href="https://t.me/NDshopUA" class="knop">Замовити</a></button>
+			</div>
+			<div class="mini">
+				<img src="http://img08.taobaocdn.com/bao/uploaded/i8/T1NneNXbNXXXbiqW3T_010705.jpg">
+				<h1>Название позиции</h1>
+				<a href="file:///C:/Users/User/Desktop/N&D/%D0%9A%D0%BE%D0%B4/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%96%20%D0%A1%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B8/%D0%91%D1%96%D0%BB%D1%8C%D1%88%D0%B5%20%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D1%97/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D0%B0/2/2.html" class="more">більше інформації</a><br>
+				<button class="knopka"><a href="https://t.me/NDshopUA" class="knop">Замовити</a></button>
+			</div>
+			<div class="mini">
+				<img src="https://static.tildacdn.com/tild3536-6166-4731-b462-323537336562/air_force_1_mid_red.jpg">
+				<h1>Название позиции</h1>
+				<a href="file:///C:/Users/User/Desktop/N&D/%D0%9A%D0%BE%D0%B4/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%96%20%D0%A1%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B8/%D0%91%D1%96%D0%BB%D1%8C%D1%88%D0%B5%20%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D1%97/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D0%B0/3/3.html" class="more">більше інформації</a><br>
+				<button class="knopka"><a href="https://t.me/NDshopUA" class="knop">Замовити</a></button>
+			</div>
+			<div class="mini">
+				<img src="https://sneakersearch.ru/wp-content/uploads/2018/11/AJ7747700-sneaker-search.jpg">
+				<h1>Название позиции</h1>
+				<a href="file:///C:/Users/User/Desktop/N&D/%D0%9A%D0%BE%D0%B4/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%96%20%D0%A1%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B8/%D0%91%D1%96%D0%BB%D1%8C%D1%88%D0%B5%20%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D1%97/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D0%B0/4/4.html" class="more">більше інформації</a><br>
+				<button class="knopka"><a href="https://t.me/NDshopUA" class="knop">Замовити</a></button>
+			</div>
+			<div class="mini">
+				<img src="http://gw.alicdn.com/bao/uploaded/i4/TB1fYEyGVXXXXbNXVXXXXXXXXXX_!!0-item_pic.jpg">
+				<h1>Название позиции</h1>
+				<a href="file:///C:/Users/User/Desktop/N&D/%D0%9A%D0%BE%D0%B4/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%96%20%D0%A1%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B8/%D0%91%D1%96%D0%BB%D1%8C%D1%88%D0%B5%20%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D1%97/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D0%B0/5/5.html" class="more">більше інформації</a><br>
+				<button class="knopka"><a href="https://t.me/NDshopUA" class="knop">Замовити</a></button>
+			</div>
+			<div class="mini">
+				<img src="https://i1.proskater.ru/images/b2images/1041/270412nike06_1.jpg">
+				<h1>Название позиции</h1>
+				<a href="file:///C:/Users/User/Desktop/N&D/%D0%9A%D0%BE%D0%B4/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%96%20%D0%A1%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B8/%D0%91%D1%96%D0%BB%D1%8C%D1%88%D0%B5%20%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D1%97/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D0%B0/6/6.html" class="more">більше інформації</a><br>
+				<button class="knopka"><a href="https://t.me/NDshopUA" class="knop">Замовити</a></button>
+			</div>
+			<div class="mini">
+				<img src="https://media1.popsugar-assets.com/files/thumbor/kfgyuL3-JUk6_-rwe3bplM1QO6w/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2017/05/04/687/n/1922564/de5848db590b490be24c45.90007962_edit_img_image_43502473_1493910115/i/Nike-Air-Force-1-Iridescent-Sneakers.jpg">
+				<h1>Название позиции</h1>
+				<a href="file:///C:/Users/User/Desktop/N&D/%D0%9A%D0%BE%D0%B4/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%96%20%D0%A1%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B8/%D0%91%D1%96%D0%BB%D1%8C%D1%88%D0%B5%20%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D1%97/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D0%B0/7/7.html" class="more">більше інформації</a><br>
+				<button class="knopka"><a href="https://t.me/NDshopUA" class="knop">Замовити</a></button>
+			</div>
+			<div class="mini">
+				<img src="https://ronixsport.ru/pictures/product/big/10624_big.jpeg">
+				<h1>Название позиции</h1>
+				<a href="file:///C:/Users/User/Desktop/N&D/%D0%9A%D0%BE%D0%B4/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%96%20%D0%A1%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B8/%D0%91%D1%96%D0%BB%D1%8C%D1%88%D0%B5%20%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D1%97/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D0%B0/8/8.html" class="more">більше інформації</a><br>
+				<button class="knopka"><a href="https://t.me/NDshopUA" class="knop">Замовити</a></button>
+			</div>
+			<div class="mini">
+				<img src="https://cdn.100sp.ru/pictures/347904961">
+				<h1>Название позиции</h1>
+				<a href="file:///C:/Users/User/Desktop/N&D/%D0%9A%D0%BE%D0%B4/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%96%20%D0%A1%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B8/%D0%91%D1%96%D0%BB%D1%8C%D1%88%D0%B5%20%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D1%97/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D0%B0/9/9.html" class="more">більше інформації</a><br>
+				<button class="knopka"><a href="https://t.me/NDshopUA" class="knop">Замовити</a></button>
+			</div>
+			<div class="mini">
+				<img src="https://cdnya.proimagescdn.ru/images/b2images/1046/220812nikeman05_1.jpg">
+				<h1>Название позиции</h1>
+				<a href="file:///C:/Users/User/Desktop/N&D/%D0%9A%D0%BE%D0%B4/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%96%20%D0%A1%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B8/%D0%91%D1%96%D0%BB%D1%8C%D1%88%D0%B5%20%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D1%97/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D0%B0/10/10.html" class="more">більше інформації</a><br>
+				<button class="knopka"><a href="https://t.me/NDshopUA" class="knop">Замовити</a></button>
+			</div>
+			<div class="mini">
+				<img src="http://img01.taobaocdn.com/bao/uploaded/i1/14418019373094762/T1rMUZXdXbXXXXXXXX_!!0-item_pic.jpg">
+				<h1>Название позиции</h1>
+				<a href="file:///C:/Users/User/Desktop/N&D/%D0%9A%D0%BE%D0%B4/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%96%20%D0%A1%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B8/%D0%91%D1%96%D0%BB%D1%8C%D1%88%D0%B5%20%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D1%97/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D0%B0/11/11.html" class="more">більше інформації</a><br>
+				<button class="knopka"><a href="https://t.me/NDshopUA" class="knop">Замовити</a></button>
+			</div>
+			<div class="mini">
+				<img src="https://cdn.mikai.org/s/9a29b1f41568dd0826aa8ca142d.jpg">
+				<h1>Название позиции</h1>
+				<a href="file:///C:/Users/User/Desktop/N&D/%D0%9A%D0%BE%D0%B4/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%96%20%D0%A1%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B8/%D0%91%D1%96%D0%BB%D1%8C%D1%88%D0%B5%20%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D1%97/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D0%B0/12/12.html" class="more">більше інформації</a><br>
+				<button class="knopka"><a href="https://t.me/NDshopUA" class="knop">Замовити</a></button>
+			</div>
+		</div>
+		<div class="dno">
+				<a href="https://www.instagram.com/ndshopua/?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr" class="dnopic"><img src="https://avatars.mds.yandex.net/i?id=d9819057c02c2a9ec8cbfdfb54d5238530209cf0-10176094-images-thumbs&n=13" width="10px", height="80px"></a>
+				<h1 class="number">SHOP_UA</h1>
+				<h1 class="post">ndshoppingua@gmail.com</h1>
+		</div>
+</body>
+</html>
